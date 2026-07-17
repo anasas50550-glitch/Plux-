@@ -3,17 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plux</title>
+    <title>PLUX</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <h1>Welcome to Plux</h1>
+<div class="app">
 
-    <button id="btn">Click Me</button>
+    <!-- Header -->
+    <header class="top-bar">
+        <h1>PLUX</h1>
+        <div class="balance">
+            <span>Balance</span>
+            <h2 id="coins">20</h2>
+        </div>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- Level -->
+    <section class="level-box">
+        <div class="level-text">
+            <span>Level 1</span>
+            <span id="xpText">20 / 1000</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-fill" id="xpBar"></div>
+        </div>
+    </section>
+
+    <!-- Tap Area -->
+    <main class="tap-area">
+
+        <button id="tapButton" class="coin">
+            🪙
+        </button>
+
+    </main>
+
+    <!-- Energy -->
+    <section class="energy-box">
+
+        <div class="energy-header">
+            <span>⚡ Energy</span>
+            <span id="energyText">1000 / 1000</span>
+        </div>
+
+        <div class="progress">
+            <div class="energy-fill" id="energyBar"></div>
+        </div>
+
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+
+        <button class="nav-btn active">Tap</button>
+        <button class="nav-btn">Tasks</button>
+        <button class="nav-btn">Rewards</button>
+        <button class="nav-btn">Ranks</button>
+        <button class="nav-btn">Profile</button>
+
+    </nav>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
