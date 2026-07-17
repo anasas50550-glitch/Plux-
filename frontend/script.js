@@ -1,1 +1,3 @@
-console.log("Plux loaded successfully!");
+document.getElementById("btn").addEventListener("click", function () {
+  alert("Hello! Welcome to Plux 🚀");
+});
